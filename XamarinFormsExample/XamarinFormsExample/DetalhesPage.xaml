@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             Title="{Binding Titulo}"
+             mc:Ignorable="d"
+             x:Class="XamarinFormsExample.DetalhesPage">
+
+    <ScrollView>
+        <StackLayout Padding="20,30" Orientation="Vertical" >
+            <Image Source="{Binding Imagem}" />
+            <Label Text="{Binding Nome}"
+                   FontSize="Large"
+                   TextColor="#383838"/>
+            <Label Text="{Binding Descricao}"
+                   FontSize="Large"
+                   TextColor="#383838"/>
+        </StackLayout>
+    </ScrollView>
+  
+</ContentPage>
